@@ -192,6 +192,39 @@ h1 {
   opacity: 1;
 }
 
+.movieDetails {
+  width: 90%;
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.details-head {
+  font-size: 35px;
+  text-align: center;
+}
+
+.details-body {
+  display: block;
+}
+
+.button {
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  color: #1c1d1f;
+  background: #f0f0f0;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.button:hover {
+  color: #f0f0f0;
+  background: #1c1d1f;
+  transition: all 0.5s;
+}
+
 @media screen and (max-width: 600px) {
   .app {
     padding: 4rem 2rem;
