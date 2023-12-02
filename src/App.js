@@ -2,16 +2,15 @@ import React, { useState, useEffect } from "react";
 import MovieCard from "./MovieCard";
 import SearchIcon from "./search.svg";
 import "./App.css";
-import MovieDetails from "./MovieDetails";
 
-const API_URL = "http://www.omdbapi.com?apikey=b6003d8a";
+const API_URL = "http://www.omdbapi.com/?i=tt3896198&apikey=92ca3596";
 
 const App = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [movies, setMovies] = useState([]);
 
   useEffect(() => {
-    searchMovies("Batman");
+    searchMovies("Avengers");
   }, []);
 
   const searchMovies = async (title) => {
@@ -42,7 +41,7 @@ const App = () => {
         <div className="container">
           {movies.map((movie) => (
             <MovieCard movie={movie} />
-          ))}
+            ))}
         </div>
       ) : (
         <div className="empty">
